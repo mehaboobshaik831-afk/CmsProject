@@ -18,7 +18,7 @@ import com.crm.ClientManagementSystem.GenericLibrary.SeleniumUtility;
 import objectRepository.HomePage;
 import objectRepository.OrganizationPage;
 @Listeners(ListenerImplementation.class)
-public class CreateOrganization extends Baseclass {
+public class CreateOrganizationTest extends Baseclass {
 @Test
 public void create() throws EncryptedDocumentException, IOException {
 	HomePage hp=new HomePage(driver);
@@ -26,7 +26,7 @@ public void create() throws EncryptedDocumentException, IOException {
 	OrganizationPage op=new OrganizationPage(driver);
 	op.getplusicon().click();
 	FileUtils f=new FileUtils();
-    String organizationname = f.readDataFromExcel("TstingData", 1, 1);
+    String organizationname = f.readDataFromExcel("TestingData", 1, 1);
     
     String email = f.readDataFromExcel("TestingData", 1, 2);
 	WebElement address = op.getIndustrydrop();

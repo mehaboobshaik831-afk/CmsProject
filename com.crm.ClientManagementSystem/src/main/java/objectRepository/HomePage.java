@@ -10,7 +10,7 @@ public class HomePage {
 @FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 private WebElement profile;
 
-@FindBy(linkText="Sign Out")
+@FindBy(xpath="//a[text()='Sign Out']")
 private WebElement signoutlink;
 
 @FindBy(linkText="Calendar")

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[database is connected]]>
@@ -11,54 +11,74 @@
       <![CDATA[logged in ]]>
     </line>
     <line>
-      <![CDATA[logged out successfully]]>
-    </line>
-    <line>
       <![CDATA[browser is closed]]>
     </line>
     <line>
       <![CDATA[database is disconnected successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-04-20T12:34:43 IST" name="Default suite" finished-at="2026-04-20T12:35:12 IST" duration-ms="29351">
+  <suite started-at="2026-04-21T13:14:47 IST" name="Default suite" finished-at="2026-04-21T13:15:08 IST" duration-ms="21770">
     <groups>
     </groups>
-    <test started-at="2026-04-20T12:34:43 IST" name="Default test" finished-at="2026-04-20T12:35:12 IST" duration-ms="29351">
-      <class name="com.crm.ClientManagementSystem.Organization.CreateOrganization">
-        <test-method is-config="true" signature="connectingWithDatabase()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:34:43 IST" name="connectingWithDatabase" finished-at="2026-04-20T12:34:43 IST" duration-ms="19" status="PASS">
+    <test started-at="2026-04-21T13:14:47 IST" name="Default test" finished-at="2026-04-21T13:15:08 IST" duration-ms="21770">
+      <class name="com.crm.ClientManagementSystem.Organization.CreateOrganizationTest">
+        <test-method is-config="true" signature="connectingWithDatabase()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:14:47 IST" name="connectingWithDatabase" finished-at="2026-04-21T13:14:47 IST" duration-ms="20" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[database is connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectingWithDatabase -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:34:43 IST" name="launchBrowser" finished-at="2026-04-20T12:34:54 IST" duration-ms="11419" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:14:47 IST" name="launchBrowser" finished-at="2026-04-21T13:14:49 IST" duration-ms="2428" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser launched and navigate to cms]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToCMS()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:34:54 IST" name="loginToCMS" finished-at="2026-04-20T12:34:59 IST" duration-ms="4340" status="PASS">
+        <test-method is-config="true" signature="loginToCMS()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:14:49 IST" name="loginToCMS" finished-at="2026-04-21T13:14:54 IST" duration-ms="4420" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[logged in ]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToCMS -->
-        <test-method signature="create()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:34:59 IST" name="create" finished-at="2026-04-20T12:35:09 IST" duration-ms="10741" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="create()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:14:54 IST" name="create" finished-at="2026-04-21T13:15:07 IST" duration-ms="13402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method is-config="true" signature="logoutFromCMS()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:15:07 IST" name="logoutFromCMS" finished-at="2026-04-21T13:15:08 IST" duration-ms="1121" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null]]>
+              <![CDATA[Unable to find element with locator By.linkText: Sign Out
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null
-at com.crm.ClientManagementSystem.GenericLibrary.FileUtils.readDataFromExcel(FileUtils.java:23)
-at com.crm.ClientManagementSystem.Organization.CreateOrganization.create(CreateOrganization.java:29)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.linkText: Sign Out
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:169)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.crm.ClientManagementSystem.GenericLibrary.Baseclass.logoutFromCMS(Baseclass.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -83,32 +103,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method is-config="true" signature="logoutFromCMS()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:35:09 IST" name="logoutFromCMS" finished-at="2026-04-20T12:35:12 IST" duration-ms="2321" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[logged out successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- logoutFromCMS -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:35:12 IST" name="closeTheBrowser" finished-at="2026-04-20T12:35:12 IST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:15:08 IST" name="closeTheBrowser" finished-at="2026-04-21T13:15:08 IST" duration-ms="234" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser is closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="disconnectWithDatabase()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganization@3bf7ca37]" started-at="2026-04-20T12:35:12 IST" name="disconnectWithDatabase" finished-at="2026-04-20T12:35:12 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="disconnectWithDatabase()[pri:0, instance:com.crm.ClientManagementSystem.Organization.CreateOrganizationTest@3bf7ca37]" started-at="2026-04-21T13:15:08 IST" name="disconnectWithDatabase" finished-at="2026-04-21T13:15:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[database is disconnected successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- disconnectWithDatabase -->
-      </class> <!-- com.crm.ClientManagementSystem.Organization.CreateOrganization -->
+      </class> <!-- com.crm.ClientManagementSystem.Organization.CreateOrganizationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
